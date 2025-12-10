@@ -3,6 +3,8 @@ on:
   push:
     branches:
       - main
+  # This enables the manual trigger from the Actions tab in the GitHub UI
+  workflow_dispatch:
   pull_request:
     types: [opened, synchronize, reopened]
 jobs:
