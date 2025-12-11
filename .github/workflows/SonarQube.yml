@@ -12,6 +12,10 @@ jobs:
     name: SonarQube
     runs-on: ubuntu-latest
     steps:
+      - name: Configure Git default branch to 'main'
+        run: |
+          git config --global init.defaultBranch main
+
       - uses: actions/checkout@v5
         with:
           fetch-depth: 0  # Shallow clones should be disabled for a better relevancy of analysis
