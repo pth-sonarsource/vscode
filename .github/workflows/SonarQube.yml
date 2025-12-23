@@ -38,6 +38,7 @@ jobs:
             -Dsonar.objc.file.suffixes=-
             -Dsonar.architecture.visualization.enabled=false 
             -Dsonar.architecture.enable=true 
+            -Dsonar.log.level=TRACE
             -Dsonar.architecture.preview.enable=true 
             -Dsonar.architecture.preview.available=true
             -Dsonar.sources=src
